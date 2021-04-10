@@ -1095,8 +1095,8 @@ if (/^https:\/\/(lichess\.org|lichess\.dev|mskchess\.ru)\/(\w{8}|\w{12})(\/white
             firstOne.setAttribute('nonce', nonce)
             firstOne.setAttribute('defer', 'defer')
             secondOne.setAttribute('nonce', nonce)
-            document.body.appendChild(firstOne);
-            document.body.appendChild(secondOne);
+            //document.body.appendChild(firstOne);
+            //document.body.appendChild(secondOne);
             let windowScript = document.createElement('script');
             windowScript.setAttribute('nonce', nonce)
             windowScript.innerHTML = `(${innerContent.toString()})()`
